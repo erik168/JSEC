@@ -1,0 +1,49 @@
+@charset "utf-8";
+body {background:#eee;margin:0;}
+a,img {border:0;}
+h3 {border-left:3px solid #666;color:#666;text-indent:10px;margin:15px 0;}
+textarea {border:2px solid #888;background:#222;font-family:"Courier New";font-size:14px;color:#3c0;}
+
+.exec-btn {
+	display:block;
+	border:1px solid #666;
+	background:#9c0;
+	color:#360;
+	padding:5px;
+	margin:5px 0;
+	width:70px;
+	height:30px;
+}
+
+.func-list {width:180px;text-align:center;font-size:12px;}
+.func-list a {
+	height:24px;
+	width:130px;
+	display:block;
+	margin:5px auto;
+	text-decoration:none;
+	color:#657528;
+	background:#d5dea7;
+	border:1px solid #c8dc7b;
+	line-height:24px;
+	font-size:14px;
+}
+.func-list a:hover {background:#c8dc7b;}
+
+.overview-error, .overview-browser, .overview-warning {margin-right:10px;padding-top:1px;}
+.overview-error div, .overview-browser div, .overview-warning div {font-size:14px;padding:5px;font-family:"Courier New","宋体";}
+.overview-error h3 {border-left:3px solid #B33F3F;color:#B33F3F;}
+.overview-error div {background:#EE9A9A;}
+.overview-warning h3 {border-left:3px solid #c89703;color:#c89703;}
+.overview-warning div {background:#e7ce82;}
+.overview-browser cite {display:block;font-style:normal;}
+.overview-browser h4 {margin:0;}
+.overview-browser h4 dfn {font-size:12px;font-weight:normal;padding-left:20px;font-style:normal;}
+.overview-browser dt {margin:5px 0 0 20px;line-height:22px;border-bottom:2px solid #bbb;}
+.overview-browser dd {
+	margin:0 0 2px 20px;
+	background:#e5e5e5;
+	padding:5px;
+	border:1px solid #e5e5e5;
+}
+.overview-browser dd:hover{border:1px solid #aaa;}

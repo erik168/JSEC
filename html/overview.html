@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>overview测试</title>
+        <script type="text/javascript" src="js/util.js"></script>
+        <script type="text/javascript" src="../jsec.js"></script>
+        <script type="text/javascript" src="../tools/overview.js"></script>
+		<link href="jsec.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+<h3>测试代码：</h3>
+<textarea id="jscode" style="width:800px;height:200px;">
+var obj = {
+123:1,
+'aaa':'aaa',
+test: 1+'test'
+}
+
+var arr = [1,'dd',3+4];
+
+var reg = /ddd/i;
+
+var str = 'ddd';
+
+var num = 123;
+
+var nul = null;
+</textarea>
+<button id="execBtn" class="exec-btn">执行测试</button>
+<hr>
+
+<div class="overview-error">
+<h3>错误：</h3>
+<div id="ErrorResult"></div>
+</div>
+
+<div class="overview-warning">
+<h3>警告：</h3>
+<div id="WarnResult"></div>
+</div>
+
+<div class="overview-browser">
+<h3>浏览：</h3>
+<div id="Result"></div>
+</div>
+
+<script type="text/javascript" src="js/overview.js"></script>
+    </body>
+</html>

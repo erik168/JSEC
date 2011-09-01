@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>jsec测试</title>
+        <script type="text/javascript" src="js/util.js"></script>
+        <script type="text/javascript" src="../jsec.js"></script>
+		<link href="jsec.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+<textarea id="Expressions" style="width:800px;height:400px;display:none">
+this.test;
+1 + 2 * 3;
+([1, 2, 3]).join('');
+var obj = ({'a':1}).a;
+delete obj.a;
+typeof obj;
+new String('test');
+var fn = function (param1, param2) {
+};
+num++;
+++num;
+void 0;
+1 + -1;
+a && b;
+!a || c;
+obj instanceof Object;
+a === 1;
+!test ? 1 : 2;
+1, 2;
+a += 1;
+1 + ((2 + 5) * 3) / 4;
+</textarea>
+
+<h3>测试代码：</h3>
+<textarea id="jscode" style="width:800px;height:200px;">
+var obj = {
+123:1,
+'aaa':'aaa',
+test: 1+'test'
+}
+
+var arr = [1,'dd',3+4];
+
+var reg = /ddd/i;
+
+var str = 'ddd';
+
+var num = 123;
+
+var nul = null;
+</textarea>
+<button id="execBtn" class="exec-btn">执行测试</button>
+<hr>
+
+<h3>词法分析结果：</h3>
+<textarea id="LexicalResult" style="width:800px;height:200px;"></textarea>
+<br>
+<h3>语法分析结果：</h3>
+<textarea id="SyntaxResult" style="width:800px;height:400px;"></textarea>
+<script type="text/javascript" src="js/jsec.js"></script>
+    </body>
+</html>
